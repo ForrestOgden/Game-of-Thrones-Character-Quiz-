@@ -173,6 +173,10 @@ const show = function(form){
 const handleQ1 = function(){
 
     let choices1 = document.getElementsByName('q1');
+  
+      if(choices1[0].checked === false && choices1[1].checked === false  && choices1[2].checked === false  && choices1[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices1.length; i++) {
 
@@ -193,6 +197,8 @@ const handleQ1 = function(){
      show(form2);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -202,6 +208,10 @@ const handleQ1 = function(){
 const handleQ2 = function(){
     
    let choices2 = document.getElementsByName('q2');
+  
+      if(choices2[0].checked === false && choices2[1].checked === false  && choices2[2].checked === false  && choices2[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices2.length; i++) {
 
@@ -221,6 +231,8 @@ const handleQ2 = function(){
      show(form3);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -231,6 +243,10 @@ const handleQ2 = function(){
 const handleQ3 = function(){
     
    let choices3 = document.getElementsByName('q3');
+  
+      if(choices3[0].checked === false && choices3[1].checked === false  && choices3[2].checked === false  && choices3[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices3.length; i++) {
 
@@ -250,6 +266,8 @@ const handleQ3 = function(){
      show(form4);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -262,6 +280,10 @@ const handleQ3 = function(){
 const handleQ4 = function(){
     
    let choices4 = document.getElementsByName('q4');
+  
+      if(choices4[0].checked === false && choices4[1].checked === false  && choices4[2].checked === false  && choices4[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices4.length; i++) {
 
@@ -281,6 +303,8 @@ const handleQ4 = function(){
      show(form5);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -291,6 +315,10 @@ const handleQ4 = function(){
 const handleQ5 = function(){
     
    let choices5 = document.getElementsByName('q5');
+  
+      if(choices5[0].checked === false && choices5[1].checked === false  && choices5[2].checked === false  && choices5[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices5.length; i++) {
 
@@ -310,6 +338,8 @@ const handleQ5 = function(){
      show(form6);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -318,6 +348,10 @@ const handleQ5 = function(){
 const handleQ6 = function(){
     
    let choices6 = document.getElementsByName('q6');
+  
+      if(choices6[0].checked === false && choices6[1].checked === false  && choices6[2].checked === false  && choices6[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices6.length; i++) {
 
@@ -337,6 +371,8 @@ const handleQ6 = function(){
      show(form7);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -345,6 +381,10 @@ const handleQ6 = function(){
 const handleQ7 = function(){
     
    let choices7 = document.getElementsByName('q7');
+  
+      if(choices7[0].checked === false && choices7[1].checked === false  && choices7[2].checked === false  && choices7[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices7.length; i++) {
 
@@ -364,6 +404,8 @@ const handleQ7 = function(){
      show(form8);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -372,6 +414,10 @@ const handleQ7 = function(){
 const handleQ8 = function(){
     
    let choices8 = document.getElementsByName('q8');
+  
+      if(choices8[0].checked === false && choices8[1].checked === false  && choices8[2].checked === false  && choices8[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices8.length; i++) {
 
@@ -391,6 +437,8 @@ const handleQ8 = function(){
      show(form9);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -399,6 +447,10 @@ const handleQ8 = function(){
 const handleQ9 = function(){
     
    let choices9 = document.getElementsByName('q9');
+  
+      if(choices9[0].checked === false && choices9[1].checked === false  && choices9[2].checked === false  && choices9[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices9.length; i++) {
 
@@ -419,6 +471,8 @@ const handleQ9 = function(){
      show(form10);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -427,6 +481,10 @@ const handleQ9 = function(){
 const handleQ10 = function(){
     
    let choices10 = document.getElementsByName('q10');
+  
+      if(choices10[0].checked === false && choices10[1].checked === false  && choices10[2].checked === false  && choices10[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices10.length; i++) {
 
@@ -446,6 +504,8 @@ const handleQ10 = function(){
      show(form11);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -454,6 +514,10 @@ const handleQ10 = function(){
 const handleQ11 = function(){
     
    let choices11 = document.getElementsByName('q11');
+  
+      if(choices11[0].checked === false && choices11[1].checked === false  && choices11[2].checked === false  && choices11[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices11.length; i++) {
 
@@ -473,6 +537,8 @@ const handleQ11 = function(){
      show(form12);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -481,6 +547,10 @@ const handleQ11 = function(){
 const handleQ12 = function(){
     
    let choices12 = document.getElementsByName('q12');
+  
+      if(choices12[0].checked === false && choices12[1].checked === false  && choices12[2].checked === false  && choices12[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices12.length; i++) {
 
@@ -500,6 +570,8 @@ const handleQ12 = function(){
      show(form13);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -508,6 +580,10 @@ const handleQ12 = function(){
 const handleQ13 = function(){
     
    let choices13 = document.getElementsByName('q13');
+  
+      if(choices13[0].checked === false && choices13[1].checked === false  && choices13[2].checked === false  && choices13[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices13.length; i++) {
 
@@ -527,6 +603,8 @@ const handleQ13 = function(){
      show(form14);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -535,6 +613,10 @@ const handleQ13 = function(){
 const handleQ14 = function(){
     
    let choices14 = document.getElementsByName('q14');
+  
+      if(choices14[0].checked === false && choices14[1].checked === false  && choices14[2].checked === false  && choices14[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices14.length; i++) {
 
@@ -554,6 +636,8 @@ const handleQ14 = function(){
      show(form15);
 
      console.log(characterPointTracker);
+      
+    }
 
 };
 
@@ -563,6 +647,10 @@ const handleQ14 = function(){
 const handleQ15 = function(){
     
    let choices15 = document.getElementsByName('q15');
+  
+      if(choices15[0].checked === false && choices15[1].checked === false  && choices15[2].checked === false  && choices15[3].checked === false){
+      alert('You must select an answer before continuing. \n Try selecting again!');
+    } else {
 
     for(let i = 0; i < choices15.length; i++) {
 
@@ -594,6 +682,7 @@ const handleQ15 = function(){
 
 
      console.log(result);
+    }
 
      
 };
