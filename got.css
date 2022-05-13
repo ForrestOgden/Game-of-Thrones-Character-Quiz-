@@ -618,3 +618,17 @@ color: black;
 }
 
 }
+
+@media screen and (max-width: 450px){
+.result-container{
+  transform: scale(0.52);
+}
+
+}
+
+@media screen and (max-width: 400px){
+.result-container{
+  transform: scale(0.48);
+}
+
+}
