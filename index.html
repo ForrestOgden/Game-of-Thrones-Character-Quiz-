@@ -1,0 +1,568 @@
+<!DOCTPYE html>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+  <meta name='author' content='Forrest Ogden'/>
+  <meta charset="UTF-8">
+  <meta name="description" content="Game of Thrones Character Quiz">
+  <meta name="keywords" content="Game of Thrones, Character, Quiz, Game of Thrones Character Quiz">
+
+<head>
+  <title> Game Of Thrones Quiz: Which Character Are You? </title>
+  <link rel='stylesheet' href='got.css'>
+</head>
+
+<body>
+
+
+  <main class='quiz-container'>
+
+   <section class='intro'>
+
+
+     <h1 class='intro-greeting'>Welcome to the Game of Thrones character quiz! Which character are you?</h1>
+
+     <p class='intro-p'>Whenever you're ready, click the button below to get started!</p>
+       <p class='intro-p'>Here are a few notes about how the quiz works:</p>
+       <ul class='intro-list'>
+         <li>* Each question will ask you how YOU would handle a certain situation or how you feel about a certain issue.</li>
+         <li>* Every time you answer, your choice is calculated towards which character you resemble most.</li>
+         <li>* At the end of the quiz, your scores will be totaled, and the result will be displayed.</li>
+         <li>* The final result will display an image of your character!</li>
+         <li>Enjoy!</li>
+       </ul>
+     <button type='button' class='begin-btn' onclick='start()'> Get Started!</button>
+   </section>
+
+<!-- QUESTION 1 -------------------------------------------------------------------------------------------------------------------->
+
+    <form class='form question-1-form hidden'>
+          
+      <h1 class='question'>If you were King or Queen, what would your idea of 'justice' be?</h1>
+
+        <div class='question-set question-set-1'>
+         
+          <div>
+            <input type="radio" id='A1' name='q2' value='Prince Joffrey (Joff) Baratheon'>
+            <label for='A1'> Mocking and laughing at the accused, then beheading them. </label>
+          </div>
+          <div>
+            <input type="radio" id='B1' name='q2' value='Ramsay Bolton'>
+            <label for='B1'> Flaying the minds of those who've committed the crime. </label>
+          </div>
+          <div>
+            <input type="radio" id='C1' name='q2' value='Daenerys Stormborn Targaryen'>
+            <label for='C1'> Being viewed as firm, but fair by your people and giving the appropriate punishment.</label>
+          </div>
+          <div>
+            <input type="radio" id='D1' name='q2' value='Cersei Lannister'>
+            <label for='D1'>Punishing the individual any way you see fit, it's your way or the highway.</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ1()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+    
+<!-- QUESTION 2 -------------------------------------------------------------------------------------------------------------------->
+
+    <form class='form question-2-form hidden'>
+          
+      <h1 class='question'>If you had to marry Sansa Stark, you would:</h1>
+
+        <div class='question-set question-set-2'>
+         
+          <div>
+            <input type="radio" id='A2' name='q2' value='Prince Joffrey (Joff) Baratheon'>
+            <label for='A2'> rejoice with happiness! </label>
+          </div>
+          <div>
+            <input type="radio" id='B2' name='q2' value='Cersei Lannister'>
+            <label for='B2'> be disgusted at the thought of marrying a Stark. </label>
+          </div>
+          <div>
+            <input type="radio" id='C2' name='q2' value='Prince Joffrey (Joff) Baratheon'>
+            <label for='C2'> fantasize about having her killed</label>
+          </div>
+          <div>
+            <input type="radio" id='D2' name='q2' value='Tywin Lannister'>
+            <label for='D2'>manipulate her for political power</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ2()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+<!-- QUESTION 3 -------------------------------------------------------------------------------------------------------------------->
+
+    <form class='form question-3-form hidden'>
+          
+      <h1 class='question'>You have sworn your sword to a highborn queen. You would:</h1>
+
+        <div class='question-set question-set-3'>
+         
+          <div>
+            <input type="radio" id='A3' name='q3' value='Brienne of Tarth'>
+            <label for='A3'> stay valiant and true until your oath is fulfilled. </label>
+          </div>
+          <div>
+            <input type="radio" id='B3' name='q3' value='Sandor (The Hound) Clegane'>
+            <label for='B3'> grow tired of the queen's requests and venture on your own.</label>
+          </div>
+          <div>
+            <input type="radio" id='C3' name='q3' value='Ser Jorah Mormont'>
+            <label for='C3'> become her number one advisor and trustee</label>
+          </div>
+          <div>
+            <input type="radio" id='D3' name='q3' value='Samwell (Sam) Tarly'>
+            <label for='D3'>Hope that you never had to see combat and enjoy the royal food</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ3()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+<!-- QUESTION 4 -------------------------------------------------------------------------------------------------------------------->
+
+    <form class='form question-4-form hidden'>
+          
+      <h1 class='question'>A White Walker army is coming to your city. How do you prepare?</h1>
+
+        <div class='question-set question-set-4'>
+         
+          <div>
+            <input type="radio" id='A4' name='q4' value='Catelyn (Cat) Tully'>
+            <label for='A4'> Strategically move your family to various cities.</label>
+          </div>
+          <div>
+            <input type="radio" id='B4' name='q4' value='Varys (The Spider)'>
+            <label for='B4'> Spread the message to all nations as soon as possible.</label>
+          </div>
+          <div>
+            <input type="radio" id='C4' name='q4' value='Eddard (Ned) Stark'>
+            <label for='C4'> Ready the city for combat and prepare for an honorable fight.</label>
+          </div>
+          <div>
+            <input type="radio" id='D4' name='q4' value='Samwell (Sam) Tarly'>
+            <label for='D4'>Retreat to the nearest cellar and hide with the women and children</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ4()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+<!-- QUESTION 5 -------------------------------------------------------------------------------------------------------------------->
+
+    <form class='form question-5-form hidden'>
+          
+      <h1 class='question'>You have become the heir to the throne. What is your first move?</h1>
+
+        <div class='question-set question-set-5'>
+         
+          <div>
+            <input type="radio" id='A5' name='q5' value='Margaery Tyrell'>
+            <label for='A5'> Making a peaceful relationship with your spouse.</label>
+          </div>
+          <div>
+            <input type="radio" id='B5' name='q5' value='Tywin Lannister'>
+            <label for='B5'> Demonstrating your power and control over the city.</label>
+          </div>
+          <div>
+            <input type="radio" id='C5' name='q5' value='Ramsay Bolton'>
+            <label for='C5'> Publicly torture all the prisoners and force citizens to watch.</label>
+          </div>
+          <div>
+            <input type="radio" id='D5' name='q5' value='Daenerys Stormborn Targaryen'>
+            <label for='D5'>Listen to your citizens and handle their pleas.</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ5()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+ <!-- QUESTION 6 -------------------------------------------------------------------------------------------------------------------->   
+
+      <form class='form question-6-form hidden'>
+          
+      <h1 class='question'>The idea of dating your sibling is:</h1>
+
+        <div class='question-set question-set-6'>
+         
+          <div>
+            <input type="radio" id='A6' name='q6' value='Eddard (Ned) Stark'>
+            <label for='A6'> only something my enemies would participate in.</label>
+          </div>
+          <div>
+            <input type="radio" id='B6' name='q6' value='Cersei Lannister'>
+            <label for='B6'> ... Not so bad</label>
+          </div>
+          <div>
+            <input type="radio" id='C6' name='q6' value='Ser Jaime (The Kingslayer) Lannister'>
+            <label for='C6'> the kind of thing you're into.</label>
+          </div>
+          <div>
+            <input type="radio" id='D6' name='q6' value='Tywin Lannister'>
+            <label for='D6'>an abomination, and must be punished.</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ6()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+ 
+
+<!-- QUESTION 7 -------------------------------------------------------------------------------------------------------------------->
+
+
+      <form class='form question-7-form hidden'>
+          
+      <h1 class='question'>You are the King's hand, but the King has gone mad with murder. You:</h1>
+
+        <div class='question-set question-set-7'>
+         
+          <div>
+            <input type="radio" id='A7' name='q7' value='Ramsay Bolton'>
+            <label for='A7'> Kill anyone the King asks to bring honor to your name.</label>
+          </div>
+          <div>
+            <input type="radio" id='B7' name='q7' value='Ser Jaime (The Kingslayer) Lannister'>
+            <label for='B7'> Attempt to save the citizens by killing the King. </label>
+          </div>
+          <div>
+            <input type="radio" id='C7' name='q7' value='Tyrion (The Imp) Lannister'>
+            <label for='C7'> Wait for the King to become vulnerable, kill him, and flee the city.</label>
+          </div>
+          <div>
+            <input type="radio" id='D7' name='q7' value='Petyr (Littlefinger) Baelish'>
+            <label for='D7'>Suggest he visit the brothels to cure his madness and gain favor.</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ7()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+
+<!-- QUESTION 8 -------------------------------------------------------------------------------------------------------------------->
+
+
+      <form class='form question-8-form hidden'>
+          
+      <h1 class='question'>A prisoner has escaped, and you must bring them back to the castle. You:</h1>
+
+        <div class='question-set question-set-8'>
+         
+          <div>
+            <input type="radio" id='A8' name='q8' value='Prince Joffrey (Joff) Baratheon'>
+            <label for='A8'> Bring the prisoner back and watch them have their family killed</label>
+          </div>
+          <div>
+            <input type="radio" id='B8' name='q8' value='Ramsay Bolton'>
+            <label for='B8'> Feed the prisoner to the dogs and say they tried to kill you</label>
+          </div>
+          <div>
+            <input type="radio" id='C8' name='q8' value='Brienne of Tarth'>
+            <label for='C8'> Return the prisoner unharmed, and complete your duty</label>
+          </div>
+          <div>
+            <input type="radio" id='D8' name='q8' value='Sandor (The Hound) Clegane'>
+            <label for='D8'>Abandon your duty and go for some wine</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ8()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+
+<!-- QUESTION 9 -------------------------------------------------------------------------------------------------------------------->
+
+
+
+      <form class='form question-9-form hidden'>
+          
+      <h1 class='question'>How do you feel about gossip?</h1>
+
+        <div class='question-set question-set-9'>
+         
+          <div>
+            <input type="radio" id='A9' name='q9' value='Varys (The Spider)'>
+            <label for='A9'> I love it!</label>
+          </div>
+          <div>
+            <input type="radio" id='B9' name='q9' value='Tywin Lannister'>
+            <label for='B9'> I don't care for it, but it can be useful. </label>
+          </div>
+          <div>
+            <input type="radio" id='C9' name='q9' value='Cersei Lannister'>
+            <label for='C9'> I like it and plan on using it to my advantage</label>
+          </div>
+          <div>
+            <input type="radio" id='D9' name='q9' value='Sansa Stark'>
+            <label for='D9'>If it keeps me alive, I'll participate in it.</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ9()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+
+<!-- QUESTION 10 -------------------------------------------------------------------------------------------------------------------->
+
+
+      <form class='form question-10-form hidden'>
+          
+      <h1 class='question'>You are asked to abandon your identity and become no one. You would:</h1>
+
+        <div class='question-set question-set-10'>
+         
+          <div>
+            <input type="radio" id='A10' name='q10' value='Arya Stark'>
+            <label for='A10'> gladly do so if it means learning new skills</label>
+          </div>
+          <div>
+            <input type="radio" id='B10' name='q10' value='Sansa Stark'>
+            <label for='B10'> absolutely oppose that sort of thing.</label>
+          </div>
+          <div>
+            <input type="radio" id='C10' name='q10' value='Brienne of Tarth'>
+            <label for='C10'> only do so if your King or Queen commanded it</label>
+          </div>
+          <div>
+            <input type="radio" id='D10' name='q10' value='Jon Snow'>
+            <label for='D10'>Keep your identity because it honors your family name.</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ10()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+
+<!-- QUESTION 11 -------------------------------------------------------------------------------------------------------------------->
+
+
+      <form class='form question-11-form hidden'>
+          
+      <h1 class='question'>When it comes to battle, where will you be among the ranks?</h1>
+
+        <div class='question-set question-set-11'>
+         
+          <div>
+            <input type="radio" id='A11' name='q11' value='Prince Joffrey (Joff) Baratheon'>
+            <label for='A11'> As high up and as far away as possible. </label>
+          </div>
+          <div>
+            <input type="radio" id='B11' name='q11' value='Jon Snow'>
+            <label for='B11'> Leading the men and being their beacon of hope</label>
+          </div>
+          <div>
+            <input type="radio" id='C11' name='q11' value='Daenerys Stormborn Targaryen'>
+            <label for='C11'> Charging in head-first with incredible power.</label>
+          </div>
+          <div>
+            <input type="radio" id='D11' name='q11' value='Ser Jorah Mormont'>
+            <label for='D11'>Protecting the King and Queen.</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ11()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+
+<!-- QUESTION 12 -------------------------------------------------------------------------------------------------------------------->
+
+
+      <form class='form question-12-form hidden'>
+          
+      <h1 class='question'>What is your most favored attribute</h1>
+
+        <div class='question-set question-set-12'>
+         
+          <div>
+            <input type="radio" id='A12' name='q12' value='Catelyn (Cat) Tully'>
+            <label for='A12'> Protection of the children </label>
+          </div>
+          <div>
+            <input type="radio" id='B12' name='q12' value='Eddard (Ned) Stark'>
+            <label for='B12'> Raising an honorable and true family</label>
+          </div>
+          <div>
+            <input type="radio" id='C12' name='q12' value='Prince Joffrey (Joff) Baratheon'>
+            <label for='C12'> Crushing all who stand in your way.</label>
+          </div>
+          <div>
+            <input type="radio" id='D12' name='q12' value='Arya Stark'>
+            <label for='D12'>Adventuring, growing in your skills, and becoming revered.</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ12()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+
+<!-- QUESTION 13 -------------------------------------------------------------------------------------------------------------------->
+
+
+      <form class='form question-13-form hidden'>
+          
+      <h1 class='question'>When it comes to political gain, you:</h1>
+
+        <div class='question-set question-set-13'>
+         
+          <div>
+            <input type="radio" id='A13' name='q13' value='Petyr (Littlefinger) Baelish'>
+            <label for='A13'> become friends with everyone and always work to your advantage.</label>
+          </div>
+          <div>
+            <input type="radio" id='B13' name='q13' value='Tywin Lannister'>
+            <label for='B13'> will stop at nothing to gain as much power as possible. </label>
+          </div>
+          <div>
+            <input type="radio" id='C13' name='q13' value='Tyrion (The Imp) Lannister'>
+            <label for='C13'> Couldn't care less, you're simply there to enjoy the food and wine.</label>
+          </div>
+          <div>
+            <input type="radio" id='D13' name='q13' value='Jon Snow'>
+            <label for='D13'>Are favored by the people, but you don't want the responsibility.</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ13()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+
+<!-- QUESTION 14 -------------------------------------------------------------------------------------------------------------------->
+
+
+      <form class='form question-14-form hidden'>
+          
+      <h1 class='question'>You have been gifted dragon eggs. What do you do with them?</h1>
+
+        <div class='question-set question-set-14'>
+         
+          <div>
+            <input type="radio" id='A14' name='q14' value='Prince Joffrey (Joff) Baratheon'>
+            <label for='A14'> Sell them and kill the buyers anyway to take them back. </label>
+          </div>
+          <div>
+            <input type="radio" id='B14' name='q14' value='Daenerys Stormborn Targaryen'>
+            <label for='B14'> Keep them close and raise them to conquer the realm. </label>
+          </div>
+          <div>
+            <input type="radio" id='C14' name='q14' value='Jon Snow'>
+            <label for='C14'> Destroy them, they are far too powerful for anyone to have.</label>
+          </div>
+          <div>
+            <input type="radio" id='D14' name='q14' value='Varys (The Spider)'>
+            <label for='D14'>Have word spread across the nations that YOU are the ruler of dragons</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ14()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+
+<!-- QUESTION 15 -------------------------------------------------------------------------------------------------------------------->
+
+
+      <form class='form question-15-form hidden'>
+          
+      <h1 class='question'>Last question: do you pay your debts?</h1>
+
+        <div class='question-set question-set-15'>
+         
+          <div>
+            <input type="radio" id='A15' name='q15' value='Ser Jaime (The Kingslayer) Lannister'>
+            <label for='A15'> Always</label>
+          </div>
+          <div>
+            <input type="radio" id='B15' name='q15' value='Tyrion (The Imp) Lannister'>
+            <label for='B15'> Always</label>
+          </div>
+          <div>
+            <input type="radio" id='C15' name='q15' value='Petyr (Littlefinger) Baelish'>
+            <label for='C15'> Never</label>
+          </div>
+          <div>
+            <input type="radio" id='D15' name='q15' value='Cersei Lannister'>
+            <label for='D15'>Always</label>
+          </div>
+          <div class='btn-holder'>
+            <button type='button' class='submit-btn' onclick='handleQ15()'> Submit Answer</button>
+          </div>
+
+        </div>
+      </form>
+
+
+
+
+
+<!-- RESULT -------------------------------------------------------------------------------------------------------------------->
+
+
+      <section class='result-container hidden'>
+          
+      <h1 class='result-heading'></h1>
+
+        <div class='result'> </div>
+        <button type='button' class='reset-btn'><a href='file:///C:/Users/FOgden/Desktop/a/got.html'>Try again?</a></button>
+      </section>
+
+
+
+
+
+
+
+ </main>
+
+
+
+<script src='got.js'></script>
+
+  </body>
+  
+  
+
+
+
+
+
+</html>
