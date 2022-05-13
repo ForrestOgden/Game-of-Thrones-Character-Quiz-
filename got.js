@@ -407,7 +407,7 @@ const handleQ9 = function(){
 
         let pointReceiver = characterPointTracker.find(obj => obj.name === choices9[i].value);
         console.log(pointReceiver);
-        pointReceiver.points += 3;
+        choices9[i].value === 'Sansa Stark' ? pointReceiver.points += 6 : pointReceiver.points += 3;
       }
       
       choices9[i].checked = false;
@@ -434,7 +434,7 @@ const handleQ10 = function(){
         console.log(choices10[i].value);
         let pointReceiver = characterPointTracker.find(obj => obj.name === choices10[i].value);
         console.log(pointReceiver);
-        pointReceiver.points += 4;
+        choices10[i].value === 'Sansa Stark' ? pointReceiver.points += 5 : pointReceiver.points += 4;
       }
       
       choices10[i].checked = false;
