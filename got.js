@@ -238,7 +238,7 @@ const handleQ3 = function(){
         console.log(choices3[i].value);
         let pointReceiver = characterPointTracker.find(obj => obj.name === choices3[i].value);
         console.log(pointReceiver);
-        pointReceiver.points += 2;
+        pointReceiver.points += 3;
       }
       
       choices3[i].checked = false;
@@ -298,7 +298,7 @@ const handleQ5 = function(){
         console.log(choices5[i].value);
         let pointReceiver = characterPointTracker.find(obj => obj.name === choices5[i].value);
         console.log(pointReceiver);
-        pointReceiver.points += 2;
+        pointReceiver.points += 3;
       }
       
       choices5[i].checked = false;
@@ -352,7 +352,7 @@ const handleQ7 = function(){
         console.log(choices7[i].value);
         let pointReceiver = characterPointTracker.find(obj => obj.name === choices7[i].value);
         console.log(pointReceiver);
-        pointReceiver.points += 2;
+        pointReceiver.points += 3;
       }
       
       choices7[i].checked = false;
@@ -379,7 +379,7 @@ const handleQ8 = function(){
         console.log(choices8[i].value);
         let pointReceiver = characterPointTracker.find(obj => obj.name === choices8[i].value);
         console.log(pointReceiver);
-        pointReceiver.points += 3;
+        pointReceiver.points += 2;
       }
       
       choices8[i].checked = false;
@@ -407,7 +407,7 @@ const handleQ9 = function(){
 
         let pointReceiver = characterPointTracker.find(obj => obj.name === choices9[i].value);
         console.log(pointReceiver);
-        pointReceiver.points += 2;
+        pointReceiver.points += 3;
       }
       
       choices9[i].checked = false;
@@ -434,7 +434,7 @@ const handleQ10 = function(){
         console.log(choices10[i].value);
         let pointReceiver = characterPointTracker.find(obj => obj.name === choices10[i].value);
         console.log(pointReceiver);
-        pointReceiver.points += 3;
+        pointReceiver.points += 4;
       }
       
       choices10[i].checked = false;
@@ -461,7 +461,7 @@ const handleQ11 = function(){
         console.log(choices11[i].value);
         let pointReceiver = characterPointTracker.find(obj => obj.name === choices11[i].value);
         console.log(pointReceiver);
-        pointReceiver.points += 4;
+        pointReceiver.points += 2;
       }
       
       choices11[i].checked = false;
